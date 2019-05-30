@@ -1,0 +1,32 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+
+<div class="container">
+  <h2 align="center">Online Retrieved Data</h2>
+  <table class="table table-striped centered" align="center">
+        <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Username</th>
+          <th>email</th>
+          <th>Phone</th>
+          <th>Website</th>
+        </tr>
+    
+      <tr *ngFor = "let item of list">
+        <td>{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.username}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.phone}}</td>
+        <td>{{item.website}}</td>
+      </tr>
+
+  </table>
+</div>
+
+  </body>
+</html>
